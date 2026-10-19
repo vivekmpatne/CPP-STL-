@@ -18,7 +18,8 @@ int main() {
     cout << v2[3] <<  " " << v2[4] << "\n";
     cout << v2[5] << " " << v2[7] <<"\n";
 
-
+    // v.size or v.resize => related to size 
+    // v.reserve ( its rekated to capacity allocation )
 
     return 0;
 }

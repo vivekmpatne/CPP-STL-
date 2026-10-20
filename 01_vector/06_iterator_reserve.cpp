@@ -66,8 +66,8 @@ int main(){
 
     // After:   [10, 30, 40]
     //                ↑ returned iterator
-
     
+
 
 
     return 0;

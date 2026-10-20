@@ -1,4 +1,4 @@
 # Ignore compiler generated executable binaries
 *.exe
 *.out
-*.app
+*.cpp

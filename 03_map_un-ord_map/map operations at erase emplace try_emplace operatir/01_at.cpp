@@ -44,9 +44,25 @@ mp.find(8)	| mp.end() return hota hai, map unchanged rehta hai
 
     cout << "\n";
 
+    
+    printf("===============================\n");
+    
     // Next prediction: at() vs []
 
-    printf("===============================\n");
+    // try catch
+
+    unordered_map<int, int> mp3;
+    mp3[5] = 50;
+
+    try {
+        cout << mp3.at(8);
+    } catch (const out_of_range&) {
+        cout << "not found";
+    }
+
+    cout << "\n " << mp3.size();
+
+    cout << "\n";
 
     
 

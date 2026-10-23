@@ -95,6 +95,33 @@ int main(){
 
     cout << mp4.size()<<" \n";
 
+    // quick prediction 
+
+    printf("\n====\n");
+
+    unordered_map<int, int> mp5 = {
+    {1, 10}, {2, 20}
+    };
+
+    auto it5 = mp5.begin();
+    cout<<it5->first<<" "<<it5->second<<" \n";
+    cout << mp5.size()<<" \n";
+
+    while (it5 != mp5.end()) {
+        // mp5.end() != mp5.end()  // false after all itration 
+        cout<<"before erase: "<<it5->first<<" "<<it5->second<<" \n";
+        cout<<" before erase size : " << mp5.size()<<" \n";
+        it5 = mp5.erase(it5);
+        cout << "After erase, size: " <<mp5.size()<<" \n";
+    }
+
+    cout << mp5.size()<<" \n";
+
+    /*
+        Ek important distinction : 
+            begin() se end() tak iteration karte waqt, end() last element nahi hota. Woh ek special past-the-end iterator hai, jo last element ke baad ki position represent karta hai.
+    */
+
 
 
     return 0;
